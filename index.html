@@ -1,1 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Study Material | Notes, PYQ & Mock Tests</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#172033;
+}
+
+/* HEADER */
+header{
+    background:#172554;
+    color:white;
+    padding:16px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:bold;
+}
+
+.logo span{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:15px;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+    background:linear-gradient(135deg,#172554,#2563eb);
+    color:white;
+    padding:75px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:44px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:650px;
+    margin:auto;
+    color:#dbeafe;
+}
+
+.search-box{
+    max-width:650px;
+    margin:30px auto 0;
+    display:flex;
+}
+
+.search-box input{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:8px 0 0 8px;
+    font-size:16px;
+    outline:none;
+}
+
+.search-box button{
+    padding:0 25px;
+    border:none;
+    background:#38bdf8;
+    color:#082f49;
+    font-weight:bold;
+    border-radius:0 8px 8px 0;
+    cursor:pointer;
+}
+
+/* MAIN */
+.container{
+    max-width:1150px;
+    margin:auto;
+    padding:55px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.section-title h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#64748b;
+}
+
+/* CATEGORY */
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.category{
+    background:white;
+    padding:30px 20px;
+    border-radius:14px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    transition:.25s;
+    cursor:pointer;
+    border:1px solid #e2e8f0;
+}
+
+.category:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.icon{
+    font-size:42px;
+    margin-bottom:12px;
+}
+
+.category h3{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.category p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* MATERIAL */
+.materials{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:24px;
+    border-radius:14px;
+    border:1px solid #e2e8f0;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+}
+
+.card .emoji{
+    font-size:32px;
+    margin-bottom:12px;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#64748b;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    padding:10px 16px;
+    border-radius:7px;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* FEATURES */
+.features{
+    background:#eaf2ff;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.feature h3{
+    margin:10px 0;
+}
+
+.feature p{
+    color:#64748b;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    background:#0f172a;
+    color:#cbd5e1;
+    padding:35px 20px;
+    text-align:center;
+}
+
+footer h3{
+    color:white;
+    margin-bottom:10px;
+}
+
+footer p{
+    font-size:14px;
+    margin:5px;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:13px;
+    }
+
+    .hero{
+        padding:55px 20px;
+    }
+
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .search-box{
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .search-box input{
+        border-radius:8px;
+    }
+
+    .search-box button{
+        padding:13px;
+        border-radius:8px;
+    }
+
+    .section-title h2{
+        font-size:27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="logo">
+        📚 <span>Study</span>Material
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Subjects</a>
+        <a href="#materials">Notes</a>
+        <a href="#about">About</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <h1>Study Smarter. Score Better.</h1>
+
+    <p>
+        Free study materials, notes, previous year papers,
+        important questions and mock tests, all in one place.
+    </p>
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search notes, subjects, papers..."
+        >
+
+        <button onclick="searchMaterial()">
+            Search
+        </button>
+    </div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+<section class="container" id="categories">
+
+    <div class="section-title">
+        <h2>📚 Study Categories</h2>
+        <p>Choose your subject and start learning.</p>
+    </div>
+
+    <div class="categories">
+
+        <div class="category" onclick="openCategory('surveyor')">
+            <div class="icon">📐</div>
+            <h3>Surveyor</h3>
+            <p>Surveying notes, questions and exam material</p>
+        </div>
+
+        <div class="category" onclick="openCategory('maths')">
+            <div class="icon">🔢</div>
+            <h3>Mathematics</h3>
+            <p>Important formulas, questions and notes</p>
+        </div>
+
+        <div class="category" onclick="openCategory('reasoning')">
+            <div class="icon">🧠</div>
+            <h3>Reasoning</h3>
+            <p>Practice questions and study material</p>
+        </div>
+
+        <div class="category" onclick="openCategory('gk')">
+            <div class="icon">🌍</div>
+            <h3>GK / GS</h3>
+            <p>General knowledge and general studies</p>
+        </div>
+
+        <div class="category" onclick="openCategory('iti')">
+            <div class="icon">🔧</div>
+            <h3>ITI</h3>
+            <p>ITI trade notes and important questions</p>
+        </div>
+
+        <div class="category" onclick="openCategory('computer')">
+            <div class="icon">💻</div>
+            <h3>Computer</h3>
+            <p>Computer basics and competitive questions</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- MATERIAL -->
+<section class="container" id="materials">
+
+    <div class="section-title">
+        <h2>📖 Latest Study Material</h2>
+        <p>Useful resources for your exam preparation.</p>
+    </div>
+
+    <div class="materials">
+
+        <div class="card">
+            <div class="emoji">📐</div>
+
+            <h3>Surveyor Basic Notes</h3>
+
+            <p>
+                Learn the basic concepts of surveying
+                in an easy-to-understand format.
+            </p>
+
+            <a href="#" class="btn">
+                View Notes
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="emoji">📄</div>
+
+            <h3>Previous Year Papers</h3>
+
+            <p>
+                Practice previous year questions
+                and understand the exam pattern.
+            </p>
+
+            <a href="#" class="btn">
+                View Papers
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="emoji">🎯</div>
+
+            <h3>Mock Tests</h3>
+
+            <p>
+                Test your preparation with
+                practice questions and mock tests.
+            </p>
+
+            <a href="#" class="btn">
+                Start Test
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="emoji">⭐</div>
+
+            <h3>Important Questions</h3>
+
+            <p>
+                Important questions selected
+                for competitive exam preparation.
+            </p>
+
+            <a href="#" class="btn">
+                View Questions
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+<section class="features">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>✨ Why Use Our Website?</h2>
+
+            <p>
+                Everything you need for better exam preparation.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature">
+
+                <div class="icon">📚</div>
+
+                <h3>Free Materials</h3>
+
+                <p>
+                    Access useful study materials
+                    in one place.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">📱</div>
+
+                <h3>Mobile Friendly</h3>
+
+                <p>
+                    Study comfortably from your
+                    mobile, tablet or computer.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">🎯</div>
+
+                <h3>Exam Focused</h3>
+
+                <p>
+                    Focus on notes, PYQs and
+                    important exam questions.
+                </p>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="icon">🔎</div>
+
+                <h3>Easy Search</h3>
+
+                <p>
+                    Quickly find the material
+                    you are looking for.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="container" id="about">
+
+    <div class="section-title">
+
+        <h2>About This Website</h2>
+
+        <p>
+            This website is created to provide useful
+            study materials, notes, previous year papers
+            and practice resources for students.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>📚 StudyMaterial</h3>
+
+    <p>
+        Free study material for students and exam preparation.
+    </p>
+
+    <p>
+        © 2026 StudyMaterial. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<script>
+
+function searchMaterial(){
+
+    let input =
+        document.getElementById("searchInput").value
+        .toLowerCase()
+        .trim();
+
+    if(input === ""){
+
+        alert("Please enter something to search.");
+
+        return;
+    }
+
+    if(input.includes("survey") ||
+       input.includes("surveyor")){
+
+        document.getElementById("materials")
+        .scrollIntoView({behavior:"smooth"});
+
+    }
+
+    else if(input.includes("math")){
+
+        alert("Mathematics material will be available here.");
+
+    }
+
+    else if(input.includes("reason")){
+
+        alert("Reasoning material will be available here.");
+
+    }
+
+    else if(input.includes("gk") ||
+            input.includes("general")){
+
+        alert("GK / GS material will be available here.");
+
+    }
+
+    else{
+
+        alert(
+            "No material found yet. More study materials will be added soon."
+        );
+
+    }
+
+}
+
+
+function openCategory(category){
+
+    document
+        .getElementById("materials")
+        .scrollIntoView({behavior:"smooth"});
+
+}
+
+</script>
+
+</body>
+</html>
