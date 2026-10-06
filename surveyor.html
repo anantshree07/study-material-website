@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Surveyor Study Material</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #162b64, #2864df);
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #10204c;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .welcome h2 {
+            color: #173b8f;
+            margin-bottom: 10px;
+        }
+
+        .welcome p {
+            color: #666;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+            color: #173b8f;
+        }
+
+        .card p {
+            font-size: 13px;
+            color: #666;
+            min-height: 40px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
+
+        .btn:hover {
+            background: #174fc4;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 35px;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #10204c;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📐 Surveyor Study Material</h1>
+    <p>Notes, PYQ, Important Questions & Mock Tests</p>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="surveyor.html">📐 Surveyor</a>
+</nav>
+
+<div class="container">
+
+    <div class="welcome">
+        <h2>Surveyor Preparation</h2>
+        <p>Choose the study material you want to study.</p>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">📘</div>
+            <h3>Basic Notes</h3>
+            <p>Learn Surveyor basics and important concepts.</p>
+            <a href="#" class="btn">Open Notes</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Chapter-wise Notes</h3>
+            <p>Study Surveyor topics chapter by chapter.</p>
+            <a href="#" class="btn">View Chapters</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>Previous Year Questions</h3>
+            <p>Practice previous year and exam-oriented questions.</p>
+            <a href="#" class="btn">View PYQ</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Important Questions</h3>
+            <p>Important questions for quick revision.</p>
+            <a href="#" class="btn">View Questions</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📝</div>
+            <h3>Mock Tests</h3>
+            <p>Test your preparation with practice tests.</p>
+            <a href="#" class="btn">Start Test</a>
+        </div>
+
+        <div class="card">
+            <div class="icon">📖</div>
+            <h3>Exam Preparation</h3>
+            <p>Useful material for Surveyor exam preparation.</p>
+            <a href="#" class="btn">Explore</a>
+        </div>
+
+    </div>
+
+    <div class="back">
+        <a href="index.html" class="btn">← Back to Home</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Study Material | Learn • Practice • Succeed
+</footer>
+
+</body>
+</html>
